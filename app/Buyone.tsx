@@ -10,15 +10,15 @@ const Buyone = () => {
   const datas = dispatch(addProduct(data));
 
   return (
-    <main className="ml-8 md:w-[100%]  md:flex justify-center items-center ">
+    <main className=" md:w-[100%]  md:flex justify-center items-center ">
       <section className="w-[90%] md:w-[90%] h-full ">
         <div className="mt-3">
-          <p className="ml-[45px] text-[28px] md:text-[30px] font-semibold">
+          <p className="ml-[73px] text-[28px] md:text-[30px] font-semibold">
             Our Best Seller's
           </p>
         </div>
 
-        <div className=" grid grid-cols-1 ml-[45px]  md:gap-5 mxl:grid xl:grid-cols-4 md:grid md:grid-cols-3  ">
+        <div className="ml-[73px] grid grid-cols-1  md:gap-5 mxl:grid xl:grid-cols-4 md:grid md:grid-cols-3  ">
           {datas.payload?.map((el: any) => (
             <div key={el.id} className=" my-5 md:border">
               <Image
