@@ -18,7 +18,7 @@ const Buyone = () => {
           </p>
         </div>
 
-        <div className="ml-[73px] grid grid-cols-1  md:gap-5 mxl:grid xl:grid-cols-4 md:grid md:grid-cols-3  ">
+        <div className=" grid grid-cols-1  md:gap-5 xl:grid xl:grid-cols-4 md:grid md:grid-cols-3">
           {datas.payload?.map((el: any) => (
             <div key={el.id} className=" my-5 md:border">
               <Image

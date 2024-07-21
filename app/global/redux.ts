@@ -17,10 +17,11 @@ const redux = createSlice({
       state.cart = remove;
     },
     addProductToCart: (
-      state: {
-        product: never[];
-        cart: {}[];
-      },
+      state: any,
+      // {
+      //   product: never[];
+      //   cart: {}[];
+      // }
       { payload }
     ) => {
       const check: any = state.cart.findIndex(
@@ -35,7 +36,7 @@ const redux = createSlice({
       }
     },
 
-    removeProductToCart: (state, { payload }: any) => {
+    removeProductToCart: (state: any, { payload }: any) => {
       const check: any = state.cart.findIndex(
         (el: any) => el.id === payload.id
       );
