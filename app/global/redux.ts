@@ -25,6 +25,8 @@ const redux = createSlice({
     ) => {
       const check = state.cart.findIndex((el: any) => el.id === payload.id);
 
+      console.log("reading:", check);
+
       if (check >= 0) {
         state.cart[check].qty += 1;
         return;

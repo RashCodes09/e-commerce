@@ -9,7 +9,7 @@ import {
   removeProductToCart,
 } from "../global/redux";
 
-const page = () => {
+const Page = () => {
   const cart = useSelector((state: any) => {
     return state.reducer.cart;
   });
@@ -97,4 +97,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
